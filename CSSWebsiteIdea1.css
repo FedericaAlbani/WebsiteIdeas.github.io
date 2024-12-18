@@ -16,7 +16,7 @@ body {
     left: 0;
     width: 100%;
     height: 8px; /* Adjust the height as needed */
-    background-color: #c90b0b; /* Background color of the container */
+    background-color: #f2f2f2; /* Background color of the container */
     z-index: 1000; /* Ensures the progress bar is on top */
 }
 
@@ -27,91 +27,57 @@ body {
     transition: width 0.25s;
 }
 
-.fullscreen-container {
-    position: relative;
-    height: 100vh; /* Full height of the viewport */
-    width: 100vw; /* Full width of the viewport */
-}
-
-#fullscreen-image {
-    height: 100%;
-    width: 100%;
-    object-fit: cover; /* Ensures the image covers the container */
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1; /* Ensures the image is behind the content */
-}
-
-.content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-    height: 100%;
-    z-index: 1; /* Ensures the content is above the image */
-    position: relative;
-    background-color: rgba(0, 0, 0, 0.5); /* Optional: Adds a dark overlay for better text readability */
-}
-
 header {
     background-color: #ff6f61;
     color: white;
     padding: 20px;
     text-align: center;
 }
-
-.intro {
-    padding: 2rem 0;
-}
-
 .intro-image { 
     max-width: 50%; 
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
+     justify-content: center;
+      align-items: center;
+     } 
+     
+     .centered-image { 
+        width: 350px; 
+        height: 200px;
+     }
 
-.centered-image { 
-    width: 350px; 
-    height: 200px;
-}
-
-.artist-profile {
-    display: flex;
-    align-items: center;
-    margin: 2rem 0;
-}
-
-.artist-image img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    margin-right: 2rem;
-    cursor: pointer;
-}
-
-.artist-info {
-    max-width: 500px;
-}
-
-.arrow-button {
-    background-color: #ff22b9;
-    color: white;
-    border: none;
-    padding: 1rem;
-    cursor: pointer;
-    font-size: 1rem;
-    margin-top: 2rem;
-    border-radius: 5px;
-}
-
-.arrow-button:hover {
-    background-color: #e64a19;
-}
-
+    .artist-profile {
+        display: flex;
+        align-items: center;
+        margin: 2rem 0;
+    }
+    
+    .artist-image img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin-right: 2rem;
+        cursor: pointer;
+    }
+    
+    .artist-info {
+        max-width: 500px;
+    }
+    
+    .arrow-button {
+        background-color: #ff22b9;
+        color: white;
+        border: none;
+        padding: 1rem;
+        cursor: pointer;
+        font-size: 1rem;
+        margin-top: 2rem;
+        border-radius: 5px;
+    }
+    
+    .arrow-button:hover {
+        background-color: #e64a19;
+    }
+    
 nav ul {
     list-style: none;
     padding: 0;
@@ -130,5 +96,25 @@ nav ul li a {
 }
 
 .logo h1 {
-    font-family: 'Arial,[_{{{CITATION{{{_1{](https://github.com/NicolasRojas-CENG/Web-apps/tree/ee7b8ebaf845e5c2897afc636e3d06eb7093c883/Javascript%2FcountdownApp%2Fcountdown_app.js)[_{{{CITATION{{{_2{](https://github.com/fabriciosantossantana/countdown/tree/453423449252fdd8c489d1a6c014e491397c5b25/src%2Fscript.js)[_{{{CITATION{{{_3{](https://github.com/IAmPissed/count-down-summer/tree/3b6cadf35b9bbe08b4a38a981748bede0c972ef4/app.js)
+    font-family: 'Arial, sans-serif';
+}
+.countdown {
+    padding: 2rem;
+    text-align: center;
+    background-color: #e0e0e0;
+}
+
+#countdown-timer {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
