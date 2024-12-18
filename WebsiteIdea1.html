@@ -3,40 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <div class="fullscreen-image"> 
-    <img id="fullscreen-image" src="Background1.jpg" alt="Full Screen Image">
     <title>BFA 2025 Exhibition!</title>
-</div>
     <link rel="stylesheet" href="CSSWebsiteIdea1.css">
-
 </head>
 <body>
+    <div class="fullscreen-container">
+        <img id="fullscreen-image" src="Background1.jpg" alt="Full Screen Image">
+        <div class="content">
+            <h1>Welcome to the Exhibition</h1>
+        </div>
+    </div>
     <header>
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Artists</a></li>
                 <li><a href="#">Works</a></li>
-                <li><a href="#">Socialst</a></li>
+                <li><a href="#">Socials</a></li>
             </ul>
         </nav>
-
         <div id="progress-bar-container">
             <div id="progress-bar"></div>
         </div>
-        
         <script>
             window.addEventListener('scroll', () => {
                 const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
                 const scrollHeight = document.documentElement.scrollHeight || document.body.scrollHeight;
                 const clientHeight = document.documentElement.clientHeight;
-        
+
                 const scrolled = (scrollTop / (scrollHeight - clientHeight)) * 100;
                 document.getElementById('progress-bar').style.width = scrolled + '%';
             });
         </script>
-        
-        
         <div class="logo">
             <h1>BFA 2025 Exhibition!</h1>
         </div>
@@ -45,102 +43,68 @@
         <div class="intro-text">
             <h2>Welcome to our Website!</h2>
             <p>Here you will find all the artists taking part as well as their works!</p>
-            <p> So please, explore and find us on our socials!</p>
+            <p>So please, explore and find us on our socials!</p>
         </div>
         <div class="intro-image">
             <img src="a group of art students posing for a picture.png" alt="Art Students" width="350" height="200" class="centered-image">
-    
         </div>
     </section>
-   <h2> Meet the Artists!</h2>
-        <div class="artist-profile">
-            <div class="artist-image">
-                <a href="https://www.instagram.com/wisq_qasira/" target="_blank">
-                    <img id="artist-image" src="student1.jpg" alt="Artist">
-                </a>
-            </div>
-            <div class="artist-info">
-                <h2 id="artist-name">Maria Federica Albani</h2>
-                <p id="artist-description">Federica focuses on digital art and photography and in her work talks about the Maltese creature Il-Ħaddiela. With a dark illustration book and original Maltese poetry peace come and step into a world of culture and learnings!</p>
-            </div>
+    <h2>Meet the Artists!</h2>
+    <div class="artist-profile">
+        <div class="artist-image">
+            <a href="https://www.instagram.com/wisq_qasira/" target="_blank">
+                <img id="artist-image" src="student1.jpg" alt="Artist">
+            </a>
         </div>
+        <div class="artist-info">
+            <h2 id="artist-name">Maria Federica Albani</h2>
+            <p id="artist-description">Federica focuses on digital art and photography and in her work talks about the Maltese creature Il-Ħaddiela. With a dark illustration book and original Maltese poetry peace come and step into a world of culture and learnings!</p>
+        </div>
+    </div>
+    <button id="next-button" class="arrow-button">Next ➔</button>
+    <script>
+        const profiles = [
+            {
+                img: 'student1.jpg',
+                name: 'Maria Federica Albani',
+                description: 'Federica focuses on digital art and photography and in her work talks about the Maltese creature Il-Ħaddiela. With a dark illustration book and original Maltese poetry peace come and step into a world of culture and learnings!',
+                link: 'https://www.instagram.com/wisq_qasira/'
+            },
+            {
+                img: 'student2.jpg',
+                name: 'Martina Vella',
+                description: 'Martina will mix digital creation with video games in a new RPG one can play that focuses on learning about Maltese battles during the Knight era. Step into a 3D world where you become one with the battle.',
+                link: 'https://www.instagram.com/martinavella888/?hl=en'
+            },
+            {
+                img: 'student3.jpg',
+                name: 'Raquel Gili',
+                description: 'Raquel focuses on nostalgia, a feeling we all have felt before. Imagine stepping back into your childhood memories simply by touching objects from that period. The images and Home videos shown are like memories in your mind but translated on a retro screen, making you relive your nostalgia.',
+                link: 'https://www.instagram.com/ghandi_nghas_kbir/?hl=en'
+            }
+            // Add more profiles as needed
+        ];
+        let currentProfileIndex = 0;
 
-        <button id="next-button" class="arrow-button">Next ➔</button>
-    
-        <script>
-            const profiles = [
-                {
-                    img: 'student1.jpg',
-                    name: 'Maria Federica Albani',
-                    description: 'Federica focuses on digital art and photography and in her work talks about the Maltese creature Il-Ħaddiela. With a dark illustration book and original Maltese poetry peace come and step into a world of culture and learnings!',
-                    
-                    link: 'https://www.instagram.com/wisq_qasira/'
-                },
-                {
-                    img: 'student2.jpg',
-                    name: 'Martina Vella',
-                    description: 'Martina will mix digital creation with video games in a new RPG one can play that focuses on learning about Maltese battles during the Knight era. Step into a 3D world where you become one with the battle.',
-                    link: 'https://www.instagram.com/martinavella888/?hl=en'
-                },
-                {
-                    img: 'student3.jpg',
-                    name: 'Raquel Gili',
-                    description: 'Raquel focuses on nostalgia, a feeling we all have felt before. Imagine stepping back into your childhood memories simply by touching objects from that period. The images and Home videos shown are like memories in your mind but translated on a retro screen, making you relive your nostalgia. ',
-                    link: 'https://www.instagram.com/ghandi_nghas_kbir/?hl=en'
-                }
-                 //Add more profiles as needed
-            ];
-            let currentProfileIndex = 0;
-    
-            const updateProfile = () => {
-                document.getElementById('artist-image').src = profiles[currentProfileIndex].img;
-                document.getElementById('artist-image').parentElement.href = profiles[currentProfileIndex].link;
-                document.getElementById('artist-name').innerText = profiles[currentProfileIndex].name;
-                document.getElementById('artist-description').innerText = profiles[currentProfileIndex].description;
-            };
-    
-            document.getElementById('next-button').addEventListener('click', () => {
-                currentProfileIndex = (currentProfileIndex + 1) % profiles.length;
-                updateProfile();
-            });
-    
-            // Initial profile display
+        const updateProfile = () => {
+            document.getElementById('artist-image').src = profiles[currentProfileIndex].img;
+            document.getElementById('artist-image').parentElement.href = profiles[currentProfileIndex].link;
+            document.getElementById('artist-name').innerText = profiles[currentProfileIndex].name;
+            document.getElementById('artist-description').innerText = profiles[currentProfileIndex].description;
+        };
+
+        document.getElementById('next-button').addEventListener('click', () => {
+            currentProfileIndex = (currentProfileIndex + 1) % profiles.length;
             updateProfile();
-        </script>
-    
-</body>
-</html>
+        });
 
-            <div class="service-card">
-                <h3>Group Sessions</h3>
-                <button class="cta-button">Let's go.</button>
-            </div>
-            <div class="service-card">
-                <h3>Spark Pack</h3>
-                <button class="cta-button">Let's go.</button>
-            </div>
-        </div>
-    </section>
-    <section class="blog">
-        <h2>On the blog...</h2>
-        <p>I love to chat...about my clients, my spark, the world and all the beautiful things in it! Why not join me over on my blog to see what I'm musing over this week!</p>
-        <button class="cta-button">Bloggie.</button>
-    </section>
-    <section class="socials">
-        <h2>Let's hang on socials!</h2>
-        <div class="social-icons">
-            <a href="#"><img src="path/to/facebook-icon.png" alt="Facebook"></a>
-            <a href="#"><img src="path/to/instagram-icon.png" alt="Instagram"></a>
-            <a href="#"><img src="path/to/pinterest-icon.png" alt="Pinterest"></a>
-        </div>
-    </section>
-
+        // Initial profile display
+        updateProfile();
+    </script>
     <section class="countdown">
         <h3>Countdown to Exhibition!</h3>
         <div id="countdown-timer"></div>
     </section>
-    
-</main>
     <script>
         // JavaScript for Countdown
         const countdown = () => {
