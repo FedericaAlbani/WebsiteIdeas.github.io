@@ -17,10 +17,22 @@
                 <li><a href="#">Socialst</a></li>
             </ul>
         </nav>
-        
+
         <div id="progress-bar-container">
             <div id="progress-bar"></div>
         </div>
+        
+        <script>
+            window.addEventListener('scroll', () => {
+                const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+                const scrollHeight = document.documentElement.scrollHeight || document.body.scrollHeight;
+                const clientHeight = document.documentElement.clientHeight;
+        
+                const scrolled = (scrollTop / (scrollHeight - clientHeight)) * 100;
+                document.getElementById('progress-bar').style.width = scrolled + '%';
+            });
+        </script>
+        
         
         <div class="logo">
             <h1>BFA 2025 Exhibition!</h1>
