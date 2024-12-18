@@ -55,7 +55,43 @@ body {
     position: relative;
     background-color: rgba(0, 0, 0, 0.5); /* Optional: Adds a dark overlay for better text readability */
 }
-
+.dropdown { 
+    position: relative; 
+    display: inline-block;
+ } 
+ 
+ .dropbtn { 
+    background-color: #ff6f61;
+     color: white; 
+     padding: 16px; 
+     font-size: 16px; 
+     border: none; cursor:
+      pointer;
+     } 
+     
+     .dropdown-content { 
+        display: none;
+        position: absolute;
+         right: 0; 
+         background-color: #ff6f61;
+          min-width: 160px; 
+          box-shadow: 0 8px 16px rgba(0,0,0,0.2); 
+          z-index: 1;
+         } 
+         
+         .dropdown-content a {
+             color: white; padding: 12px 16px;
+              text-decoration: none; 
+              display: block; 
+            } 
+            
+            .dropdown-content a:hover { 
+                background-color: #e64a19; 
+            } 
+            
+            .dropdown:hover .dropdown-content {
+                 display: block; }
+                 
 header {
     background-color: #ff6f61;
     color: white;
