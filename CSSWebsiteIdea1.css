@@ -55,6 +55,17 @@ body {
     position: relative;
     background-color: rgba(0, 0, 0, 0.5); /* Optional: Adds a dark overlay for better text readability */
 }
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    position: absolute;  /* Changed to absolute positioning */
+    right: 0;  /* Aligned to the right */
+    top: 0;  /* Positioned at the top */
+    margin: 20px;  /* Added margin for spacing */
+}
+
 .dropdown { 
     position: relative; 
     display: inline-block;
@@ -91,7 +102,7 @@ body {
             
             .dropdown:hover .dropdown-content {
                  display: block; }
-                 
+
 header {
     background-color: #ff6f61;
     color: white;
