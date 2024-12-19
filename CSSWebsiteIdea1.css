@@ -103,13 +103,6 @@ nav ul {
             .dropdown:hover .dropdown-content {
                  display: block; }
 
-header {
-    background-color: #ff6f61;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
 .intro {
     padding: 2rem 0;
 }
