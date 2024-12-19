@@ -188,6 +188,10 @@ nav ul li a {
     position: fixed; /* Fix position at the bottom */
     bottom: 0px; /* Space above the footer */
 }
+.social-footer {
+     position: static; /* Ensure it stays in the flow of the document */
+      width: 100%;
+}
 
 .social-icons a {
     display: flex;
@@ -198,6 +202,7 @@ nav ul li a {
     width: 30px; /* Set the size of the icons */
     height: auto;
 }
+
 
 /*footer {
     position: fixed;
