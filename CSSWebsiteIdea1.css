@@ -54,72 +54,80 @@ body {
     z-index: 1; /* Ensures the content is above the image */
     position: relative;
 }
+
 .header-content { 
     position: absolute; 
     top: 50%; 
     left: 50%; 
     transform: translate(-50%, -50%);
-     color: white; text-align: center;
-     } 
+    color: white; 
+    text-align: center;
+}
+
+nav {
+    position: fixed;
+    top: 20px;  /* Adjust for header height */
+    right: 20px; /* Position to the right */
+    z-index: 1001;  /* Ensures the nav is above the background */
+}
 
 nav ul {
     list-style: none;
     padding: 0;
-    text-align: center;
-    position: fixed;  /* Changed to absolute positioning */
-    right: 0;  /* Aligned to the right */
-    top: 0;  /* Positioned at the top */
-    margin: 20px;  /* Added margin for spacing */
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;  /* Align items to the right */
 }
 
-nav ul li { 
-    display: relative; 
+nav ul li {
+    position: relative;  /* Needed for dropdown positioning */
     margin: 0 15px;
- } 
- 
- nav ul li a { 
-    color: white; 
-    text-decoration: none; 
-    font-weight: bold;
- }
+}
 
-.dropdown { 
-    position: relative; 
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.dropdown {
     display: inline-block;
- } 
- 
- .dropbtn { 
+}
+
+.dropbtn {
     background-color: #ff6f61;
-     color: white; 
-     padding: 16px; 
-     font-size: 16px; 
-     border: none; 
-     cursor:pointer;
-     } 
-     
-     .dropdown-content { 
-        display: none;
-        position: absolute;
-         right: 0; 
-         top: 100%;
-         background-color: #ff6f61;
-          min-width: 160px; 
-          box-shadow: 0 8px 16px rgba(0,0,0,0.2); 
-          z-index: 1001;
-         } 
-         
-         .dropdown-content a {
-             color: white; padding: 12px 16px;
-              text-decoration: none; 
-              display: block; 
-            } 
-            
-            .dropdown-content a:hover { 
-                background-color: #e64a19; 
-            } 
-            
-            .dropdown:hover .dropdown-content {
-                 display: block; }
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;  /* Ensure dropdown shows below the button */
+    background-color: #ff6f61;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1002;  /* Ensures the dropdown is above the nav */
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #e64a19;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 
 .intro {
     padding: 2rem 0;
@@ -170,23 +178,6 @@ nav ul li {
     background-color: #e64a19;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    text-align: center;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
 .logo h1 {
-    font-family: 'Arial,[_{{{CITATION{{{_1{](https://github.com/NicolasRojas-CENG/Web-apps/tree/ee7b8ebaf845e5c2897afc636e3d06eb7093c883/Javascript%2FcountdownApp%2Fcountdown_app.js)[_{{{CITATION{{{_2{](https://github.com/fabriciosantossantana/countdown/tree/453423449252fdd8c489d1a6c014e491397c5b25/src%2Fscript.js)[_{{{CITATION{{{_3{](https://github.com/IAmPissed/count-down-summer/tree/3b6cadf35b9bbe08b4a38a981748bede0c972ef4/app.js)
+    font-family: 'Arial';
 }
