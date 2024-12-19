@@ -178,6 +178,27 @@ nav ul li a {
     background-color: #e64a19;
 }
 
+.social-icons {
+    display: flex;
+    justify-content: space-between; /* Space icons evenly */
+    align-items: center;
+    width: 100%; /* Stretch across full width */
+    padding: 20px; /* Add padding if needed */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.social-icons a {
+    display: flex;
+    justify-content: center; /* Center the icons */
+    flex-grow: 1;
+}
+
+.social-icons img {
+    width: 30px; /* Set the size of the icons */
+    height: auto;
+}
+
+
 .logo h1 {
     font-family: 'Arial';
 }
