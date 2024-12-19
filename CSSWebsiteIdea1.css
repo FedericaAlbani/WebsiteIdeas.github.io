@@ -179,16 +179,17 @@ nav ul li a {
 }
 .social-icons {
     display: flex;
-    justify-content: space-between; /* Space icons equally */
+    justify-content: space-around; /* Space icons evenly */
     align-items: center;
     width: 100%; /* Stretch across full width */
     padding: 20px; /* Add padding if needed */
+    margin: 0 auto; /* Center the container */
 }
 
 .social-icons a {
-    flex: 1; /* Make each icon take equal space */
     display: flex;
     justify-content: center; /* Center the icons */
+    flex: 1;
 }
 
 .social-icons img {
