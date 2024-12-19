@@ -62,9 +62,7 @@ body {
      color: white; text-align: center;
      } 
      
-     header { 
-        background-color: #ff6f61;
-         color: white; 
+     header {  
          padding: 20px; 
          text-align: center; 
          position: relative;
