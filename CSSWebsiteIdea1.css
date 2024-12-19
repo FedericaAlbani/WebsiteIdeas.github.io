@@ -108,7 +108,7 @@ nav ul li a {
     position: absolute;
     right: 0;
     top: 100%;  /* Ensure dropdown shows below the button */
-    background-color: #ff6f61;
+    background-color: transparent;
     min-width: 160px;
     box-shadow: 0 8px 16px rgba(0,0,0,0.2);
     z-index: 1002;  /* Ensures the dropdown is above the nav */
@@ -122,7 +122,7 @@ nav ul li a {
 }
 
 .dropdown-content a:hover {
-    background-color: transparent;
+    background-color: #e64a19;
 }
 
 .dropdown:hover .dropdown-content {
