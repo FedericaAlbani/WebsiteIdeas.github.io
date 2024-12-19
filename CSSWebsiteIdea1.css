@@ -185,6 +185,7 @@ nav ul li a {
     width: 100%; /* Stretch across full width */
     padding: 20px; /* Add padding if needed */
     box-sizing: border-box; /* Include padding in width calculation */
+    position: fixed;
 }
 
 .social-icons a {
