@@ -177,6 +177,24 @@ nav ul li a {
 .arrow-button:hover {
     background-color: #e64a19;
 }
+.social-icons {
+    display: flex;
+    justify-content: space-between; /* Space icons equally */
+    align-items: center;
+    width: 100%; /* Stretch across full width */
+    padding: 20px; /* Add padding if needed */
+}
+
+.social-icons a {
+    flex: 1; /* Make each icon take equal space */
+    display: flex;
+    justify-content: center; /* Center the icons */
+}
+
+.social-icons img {
+    width: 30px; /* Set the size of the icons */
+    height: auto;
+}
 
 .logo h1 {
     font-family: 'Arial';
