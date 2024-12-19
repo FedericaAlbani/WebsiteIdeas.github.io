@@ -182,8 +182,7 @@ nav ul li a {
     position: relative; /* Ensure it stays in the flow of the document */
     width: 100%;
     text-align: center; /* Center the content */
-    padding: 0px 0; /* Add padding for aesthetics */
-    box-sizing: border-box; /* Include padding in width calculation */
+    padding: 10px 0; /* Add padding for aesthetics */
 }
 
 .social-icons {
@@ -200,7 +199,7 @@ nav ul li a {
 }
 
 .social-icons img {
-    width: 30px; /* Set the size of the icons */
+    width: 40px; /* Set the size of the icons */
     height: auto;
 }
 
