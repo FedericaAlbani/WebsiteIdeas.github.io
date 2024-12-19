@@ -200,14 +200,14 @@ nav ul li a {
     height: auto;
 }
 
-footer {
+/*footer {
     position: fixed;
     bottom: 0;
     width: 100%;
     text-align: center;
-    background: #3a3a3a; /* Background color for visibility */
+    background: #3a3a3a; /* Background color for visibility 
     box-sizing: border-box;
-}
+} */
 
 
 .logo h1 {
