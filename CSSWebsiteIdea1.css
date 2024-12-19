@@ -90,7 +90,7 @@ nav ul li {
     text-decoration: none; 
     font-weight: bold;
  }
- 
+
 .dropdown { 
     position: relative; 
     display: inline-block;
@@ -109,6 +109,7 @@ nav ul li {
         display: none;
         position: absolute;
          right: 0; 
+         top: 100%;
          background-color: #ff6f61;
           min-width: 160px; 
           box-shadow: 0 8px 16px rgba(0,0,0,0.2); 
