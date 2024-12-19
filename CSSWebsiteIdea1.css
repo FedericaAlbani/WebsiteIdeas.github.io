@@ -27,7 +27,7 @@ body {
     transition: width 0.25s;
 }
 
-.fullscreen-container {
+.fullscreen-container, .fullscreen-container-2 {
     position: relative;
     height: 100vh; /* Full height of the viewport */
     width: 100vw; /* Full width of the viewport */
