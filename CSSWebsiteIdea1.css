@@ -178,31 +178,33 @@ nav ul li a {
     background-color: #e64a19;
 }
 
+.social-footer {
+    position: relative; /* Ensure it stays in the flow of the document */
+    width: 100%;
+    background: #000000; /* Background color for visibility */
+    text-align: center; /* Center the content */
+    padding: 20px 0; /* Add padding for aesthetics */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
 .social-icons {
     display: flex;
     justify-content: space-around; /* Space icons evenly */
     align-items: center;
-    width: 100%; /* Stretch across full width */
-    padding: 20px; /* Add padding if needed */
-    box-sizing: border-box; /* Include padding in width calculation */
-    position: fixed; /* Fix position at the bottom */
-    bottom: 0px; /* Space above the footer */
-}
-.social-footer {
-     position: static; /* Ensure it stays in the flow of the document */
-      width: 100%;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .social-icons a {
     display: flex;
-    justify-content: center; /* Center the icons */
+    justify-content: center;
 }
 
 .social-icons img {
     width: 30px; /* Set the size of the icons */
     height: auto;
 }
-
 
 /*footer {
     position: fixed;
