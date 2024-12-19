@@ -55,6 +55,21 @@ body {
     position: relative;
     background-color: rgba(0, 0, 0, 0.5); /* Optional: Adds a dark overlay for better text readability */
 }
+.header-content { 
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+     color: white; text-align: center;
+     } 
+     
+     header { 
+        background-color: #ff6f61;
+         color: white; 
+         padding: 20px; 
+         text-align: center; 
+         position: relative;
+     }
 
 nav ul {
     list-style: none;
