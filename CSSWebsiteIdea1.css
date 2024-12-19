@@ -33,7 +33,7 @@ body {
     width: 100vw; /* Full width of the viewport */
 }
 
-#fullscreen-image {
+#fullscreen-image, #fullscreen-image-2 {
     height: 100%;
     width: 100%;
     object-fit: cover; /* Ensures the image covers the container */
@@ -164,7 +164,7 @@ nav ul li a {
 }
 
 .arrow-button {
-    background-color: #259929;
+    background-color: #ff22b9;
     color: white;
     border: none;
     padding: 1rem;
@@ -177,6 +177,7 @@ nav ul li a {
 .arrow-button:hover {
     background-color: #e64a19;
 }
+
 .social-icons {
     display: flex;
     justify-content: space-around; /* Space icons evenly */
