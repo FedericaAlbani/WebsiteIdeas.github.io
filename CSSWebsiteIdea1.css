@@ -181,9 +181,8 @@ nav ul li a {
 .social-footer {
     position: relative; /* Ensure it stays in the flow of the document */
     width: 100%;
-    background: #000000; /* Background color for visibility */
     text-align: center; /* Center the content */
-    padding: 20px 0; /* Add padding for aesthetics */
+    padding: 0px 0; /* Add padding for aesthetics */
     box-sizing: border-box; /* Include padding in width calculation */
 }
 
