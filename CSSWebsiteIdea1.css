@@ -186,8 +186,7 @@ nav ul li a {
     padding: 20px; /* Add padding if needed */
     box-sizing: border-box; /* Include padding in width calculation */
     position: fixed; /* Fix position at the bottom */
-    bottom: 40px; /* Space above the footer */
-    background: #000000; /* Background color for visibility */
+    bottom: 100px; /* Space above the footer */
 }
 
 .social-icons a {
