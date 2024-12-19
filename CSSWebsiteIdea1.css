@@ -53,7 +53,6 @@ body {
     height: 100%;
     z-index: 1; /* Ensures the content is above the image */
     position: relative;
-    background-color: rgba(0, 0, 0, 0.5); /* Optional: Adds a dark overlay for better text readability */
 }
 .header-content { 
     position: absolute; 
