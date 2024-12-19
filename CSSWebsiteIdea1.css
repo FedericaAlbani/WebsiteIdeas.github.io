@@ -205,8 +205,8 @@ footer {
     bottom: 0;
     width: 100%;
     text-align: center;
-    background: #000000; /* Background color for visibility */
-    padding: 10px 0; /* Add padding for aesthetics */
+    background: #3a3a3a; /* Background color for visibility */
+    padding: 5px 0; /* Add padding for aesthetics */
     box-sizing: border-box;
 }
 
