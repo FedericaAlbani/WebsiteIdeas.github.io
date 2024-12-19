@@ -75,7 +75,7 @@ nav ul {
     list-style: none;
     padding: 0;
     text-align: center;
-    position: absolute;  /* Changed to absolute positioning */
+    position: fixed;  /* Changed to absolute positioning */
     right: 0;  /* Aligned to the right */
     top: 0;  /* Positioned at the top */
     margin: 20px;  /* Added margin for spacing */
