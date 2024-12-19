@@ -81,7 +81,7 @@ nav ul {
 }
 
 nav ul li { 
-    display: inline; 
+    display: relative; 
     margin: 0 15px;
  } 
  
