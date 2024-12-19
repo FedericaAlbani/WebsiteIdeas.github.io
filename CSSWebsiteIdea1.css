@@ -122,7 +122,7 @@ nav ul li a {
 }
 
 .dropdown-content a:hover {
-    background-color: #e64a19;
+    background-color: transparent;
 }
 
 .dropdown:hover .dropdown-content {
