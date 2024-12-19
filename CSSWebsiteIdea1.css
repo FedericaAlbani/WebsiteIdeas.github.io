@@ -140,6 +140,28 @@ nav ul li a {
     align-items: center;
 }
 
+.countdown {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    height: 100%; /* Take full height */
+    width: 100%; /* Take full width */
+}
+
+.countdown h3 {
+    font-size: 4em; /* Make the header larger */
+    margin: 0;
+}
+
+#countdown-timer {
+    font-size: 3em; /* Make the timer text larger */
+    margin-top: 20px; /* Add some spacing */
+}
+
+
 .centered-image { 
     width: 350px; 
     height: 200px;
