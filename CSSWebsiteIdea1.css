@@ -95,6 +95,7 @@ nav ul li a {
 }
 
 .dropbtn {
+    background-color: #ff6f61;
     color: white;
     padding: 16px;
     font-size: 16px;
@@ -107,6 +108,7 @@ nav ul li a {
     position: absolute;
     right: 0;
     top: 100%;  /* Ensure dropdown shows below the button */
+    background-color: #ff6f61;
     min-width: 160px;
     box-shadow: 0 8px 16px rgba(0,0,0,0.2);
     z-index: 1002;  /* Ensures the dropdown is above the nav */
@@ -120,6 +122,7 @@ nav ul li a {
 }
 
 .dropdown-content a:hover {
+    background-color: #e64a19;
 }
 
 .dropdown:hover .dropdown-content {
@@ -177,36 +180,24 @@ nav ul li a {
 
 .social-icons {
     display: flex;
-    justify-content: space-around; /* Space icons evenly */
+    justify-content: space-between; /* Space icons evenly */
     align-items: center;
     width: 100%; /* Stretch across full width */
     padding: 20px; /* Add padding if needed */
     box-sizing: border-box; /* Include padding in width calculation */
-    position: fixed; /* Fix position at the bottom */
-    bottom: 40px; /* Space above the footer */
-    background: #000000; /* Background color for visibility */
+    position: fixed;
 }
 
 .social-icons a {
     display: flex;
     justify-content: center; /* Center the icons */
+    flex-grow: 1;
 }
 
 .social-icons img {
     width: 30px; /* Set the size of the icons */
     height: auto;
 }
-
-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    background: #000000; /* Background color for visibility */
-    padding: 10px 0; /* Add padding for aesthetics */
-    box-sizing: border-box;
-}
-
 
 
 .logo h1 {
