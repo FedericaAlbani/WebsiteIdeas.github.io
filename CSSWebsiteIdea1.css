@@ -195,6 +195,9 @@ nav ul li a {
     font-weight: bold;
 }
 
+.hidden-header { top: -100px; /* Hide header above the viewport */
+}
+
 .logo h1 {
     font-family: 'Arial,[_{{{CITATION{{{_1{](https://github.com/NicolasRojas-CENG/Web-apps/tree/ee7b8ebaf845e5c2897afc636e3d06eb7093c883/Javascript%2FcountdownApp%2Fcountdown_app.js)[_{{{CITATION{{{_2{](https://github.com/fabriciosantossantana/countdown/tree/453423449252fdd8c489d1a6c014e491397c5b25/src%2Fscript.js)[_{{{CITATION{{{_3{](https://github.com/IAmPissed/count-down-summer/tree/3b6cadf35b9bbe08b4a38a981748bede0c972ef4/app.js)
 }
