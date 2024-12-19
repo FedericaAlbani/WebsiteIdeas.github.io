@@ -191,7 +191,6 @@ nav ul li a {
     justify-content: space-around; /* Space icons evenly */
     align-items: center;
     width: 100%;
-    padding: 0px;
     box-sizing: border-box;
 }
 
