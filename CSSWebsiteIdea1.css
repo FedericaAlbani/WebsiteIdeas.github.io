@@ -182,6 +182,7 @@ nav ul li a {
     position: relative; /* Ensure it stays in the flow of the document */
     width: 100%;
     text-align: center; /* Center the content */
+    background: transparent; /* Transparent background */
 }
 
 .social-icons {
