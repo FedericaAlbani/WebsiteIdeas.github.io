@@ -188,13 +188,10 @@ nav ul li a {
     position: fixed; /* Fix position at the bottom */
     bottom: 0px; /* Space above the footer */
 }
-.social-footer { position: static; /* Ensure it stays in the flow of the document */
-     width: 100%; 
-     background: #000000; /* Background color for visibility */ 
-     text-align: center; /* Center the content */ 
-     padding: 20px 0; /* Add padding for aesthetics */ 
-     box-sizing: border-box; /* Include padding in width calculation */
-     }
+.social-footer {
+     position: static; /* Ensure it stays in the flow of the document */
+      width: 100%;
+}
 
 .social-icons a {
     display: flex;
