@@ -179,7 +179,8 @@ nav ul li a {
 }
 
 .social-footer {
-    position: relative; /* Ensure it stays in the flow of the document */
+    position: absolute; /* Ensure it stays in the flow of the document */
+    bottom: 0;
     width: 100%;
     text-align: center; /* Center the content */
     background: transparent; /* Transparent background */
