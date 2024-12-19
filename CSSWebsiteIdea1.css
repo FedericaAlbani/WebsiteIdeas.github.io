@@ -49,7 +49,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: white;
+    color: rgb(101, 44, 44);
     height: 100%;
     z-index: 1; /* Ensures the content is above the image */
     position: relative;
