@@ -61,12 +61,6 @@ body {
     transform: translate(-50%, -50%);
      color: white; text-align: center;
      } 
-     
-     header {  
-         padding: 20px; 
-         text-align: center; 
-         position: relative;
-     }
 
 nav ul {
     list-style: none;
