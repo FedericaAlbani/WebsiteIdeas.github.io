@@ -183,6 +183,7 @@ nav ul li a {
     width: 100%;
     text-align: center; /* Center the content */
     padding: 10px 0; /* Add padding for aesthetics */
+    color: rgb(51, 51, 51);
 }
 
 .social-icons {
